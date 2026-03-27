@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  bible-web:
+    build: .
+    container_name: bible-web
+    ports:
+      - "8000:8000"
+    environment:
+      - BIBLE_PATH=factBase/kjv.txt
